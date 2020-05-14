@@ -1,0 +1,7 @@
+glue.listing:
+  path: '/my-testing-page'
+  defaults: 
+    _controller: '\Drupal\glue\Controller\TestingController::listing'
+    _title: '<h2>My Custom Module Development First Module in Drupal 8</h2>'
+  requirements:
+    _permission: 'access content'

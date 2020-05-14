@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Initial example of alter
+ */
+
+/**
+ * Implement hooks_page_alter()
+ * 
+ * Add text to the bottom of each page that says 'Hello, content'
+ */
+// function glue_page_alter(&$page) {
+//     $page['content']['bartik.content']['content']['#markup'] = 'Hello, Content!';
+// }
+
+// function 
+
+function glue_form_alter(&$form, &$form_state, $form_id) {
+    if ($form_id == 'search_block_form') {
+        $form['fun_text'] = array(
+            '#markup' => '<p>Search For Weekly Digest</p>',
+            '#weight' => -10,
+        );
+    } elseif ($form_id == 'contact_message_feedback_form') {
+        $form['fun_text'] = array(
+            '#markup' => '<p>Search For Weekly Digest</p>',
+            '#weight' => -10,
+        );
+    }
+    kint($form);
+}
