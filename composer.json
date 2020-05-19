@@ -16,12 +16,14 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
         "drupal/admin_toolbar": "^2.2",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
         "drupal/libraries": "^3.0@alpha",
+        "drupal/menu_admin_per_menu": "^1.0",
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.8"
@@ -35,6 +37,12 @@
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/menu_admin_per_menu": {
+                "Fix for title disappearing in web/admin/structure/menu": 
+                "https://www.drupal.org/files/issues/2019-05-21/show_title_menu_overview_page-2984706-3.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

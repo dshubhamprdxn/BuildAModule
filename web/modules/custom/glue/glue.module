@@ -28,5 +28,4 @@ function glue_form_alter(&$form, &$form_state, $form_id) {
             '#weight' => -10,
         );
     }
-    kint($form);
 }

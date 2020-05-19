@@ -242,6 +242,52 @@
         ]
     },
     {
+        "name": "cweagans/composer-patches",
+        "version": "1.6.7",
+        "version_normalized": "1.6.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cweagans/composer-patches.git",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "composer/composer": "~1.0",
+            "phpunit/phpunit": "~4.6"
+        },
+        "time": "2019-08-29T20:11:49+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "cweagans\\Composer\\Patches"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "cweagans\\Composer\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Cameron Eagans",
+                "email": "me@cweagans.net"
+            }
+        ],
+        "description": "Provides a way to patch Composer packages."
+    },
+    {
         "name": "doctrine/annotations",
         "version": "v1.4.0",
         "version_normalized": "1.4.0.0",
@@ -1449,6 +1495,60 @@
             "source": "http://cgit.drupalcode.org/libraries",
             "issues": "http://drupal.org/project/issues/libraries",
             "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/menu_admin_per_menu",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/menu_admin_per_menu.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/menu_admin_per_menu-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "27dbef0025146a382feab67db5e93eaf280b8de4"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1507184944",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "patches_applied": []
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "anrikun",
+                "homepage": "https://www.drupal.org/user/410199"
+            },
+            {
+                "name": "mkdok",
+                "homepage": "https://www.drupal.org/user/3308753"
+            }
+        ],
+        "description": "Allows to give roles per menu admin permissions without giving them full administer menu permission.",
+        "homepage": "https://www.drupal.org/project/menu_admin_per_menu",
+        "support": {
+            "source": "https://git.drupalcode.org/project/menu_admin_per_menu"
         }
     },
     {
