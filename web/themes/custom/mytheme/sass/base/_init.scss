@@ -1,0 +1,75 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Colours
+//
+////////////////////////////////////////////////////////////////////////////////
+
+$white: #fff;
+$black: #000;
+
+$red:         #c32330;
+$mostlyblack: #121212;
+$almostblack: #3C3C3B;
+$brightgrey:  #3d444e;
+$dustygrey:   #969696;
+$codgrey:     #0d0d0d;
+$shipgrey:    #414142;
+$greyish:     #706F6F;
+$darkbordergrey: #9d9d9d;
+$silversand:  #b6b7b7;
+$mineshaft:   #262626;
+$concrete:    #f2f2f2;
+$bonjour:     #E2DFDF;
+$alto:        #d9d9d9;
+$tundora:     #404040;
+$gray:        #7f7f7f;
+$frenchgray:  #b6b6bd;
+$shark:       #303031;
+$manatee:     #929293;
+$viking:      #79badc;
+$bostonblue:  #4a90c5;
+$jellybean:   #256588;
+$silver:      #ccc;
+$firefly:     #0e1d29;
+$btnOrange:   #f69656;
+$indianred:   #cc4550;
+$vividred:    #e3120b;
+$purple:      #4054b3;
+$darkenpurple:#142680;
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Iconography
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.css-icon-play {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 2px solid $white;
+  border-radius: 100px;
+  bottom: 0;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8.5px 0 8.5px 15px;
+    border-color: transparent transparent transparent $white;
+  }
+  &.hero {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 15px;
+    &:after {
+      top: 5px;
+      left: 7px;
+      border-width: 5px 0 5px 8px;
+    }
+  }
+}

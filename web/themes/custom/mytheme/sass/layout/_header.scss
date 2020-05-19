@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Header - Logo
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.container.wrapper { width: 80%; }
+
+.site-name {
+    background-color: red;
+    a {
+        padding: 10px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+.search-box h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-box form {
+    .form-search {
+        width: 190px;
+        padding: 2px 5px 3px 0px;
+    }
+    margin-top: 8px;
+}
+
+#header {
+    .search-block-form{
+        background-color: #fff;
+        &:before {
+            width: 40px;
+            height: 24px;
+            top: 32px;
+            right: 5px;
+            padding: 4px 10px 4px 4px;
+            background-color: #fff;
+        }
+    }
+}

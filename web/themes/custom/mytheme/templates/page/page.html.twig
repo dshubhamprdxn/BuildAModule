@@ -1,0 +1,59 @@
+<div class="page">
+<a name="Top" id="Top"></a>
+<header id="header" class="header" role="header">
+  <div class="container wrapper">
+    {{ page.header }}
+  </div>
+</header>
+
+  {% if page.main_menu %}
+    <nav id="main-menu" class="navbar navbar-default" role="navigation">	
+      <div class="container wrapper">
+        {{ page.main_menu }}						
+      </div>
+    </nav>
+  {% endif %}
+
+  <section id="main" class="main" role="main">
+    <div class="container wrapper">
+
+        {% if page.sidebar_first %}
+          <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+        {% endif %}
+
+        <div class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
+          {{ page.content }}
+        </div>
+        
+        {% if page.sidebar_second %}
+          <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endif %}
+    </div>
+  </section>
+
+
+  {% if page.panel_first_1 %}
+    <section id="panel_first" class="panel_first">
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {{ page.panel_first_1 }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.footer %}
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="container wrapper">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+</div>

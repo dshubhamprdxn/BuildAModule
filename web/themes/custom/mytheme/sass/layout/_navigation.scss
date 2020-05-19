@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  NAVIGATION - MAIN
+//
+////////////////////////////////////////////////////////////////////////////////
+
+ul.menu {
+    @include flexbox;
+    @include justify-content(start);
+    background-color: #313336;
+    border-radius: 10px;
+
+    li.menu-item {
+        @include flex-basis(14%);
+    }
+}
+
+#main-menu .wrapper ul.menu li a {
+    height: 100%;
+    font-size: 15px;
+}

@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Footer
+//
+////////////////////////////////////////////////////////////////////////////////
+#footer {
+    .block { width: 100%; }
+    ul.menu {
+        @include flexbox;
+        @include justify-content(space-between);
+        li {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.menu--footer {
+    background-color: #313336;
+    padding: 20px;
+}

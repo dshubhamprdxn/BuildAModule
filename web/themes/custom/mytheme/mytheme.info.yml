@@ -1,0 +1,20 @@
+name: My THEME
+type: theme
+description: this is a custom theme for Drupal Test
+core: 8.x
+base theme: bartik
+screenshot: screenshot.png
+libraries:
+  - mytheme/global-css
+  # - mytheme/global-js
+
+regions:
+  header: Header
+  main_menu: 'Main menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  content: 'Content'
+  panel_first_1: 'Panel'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

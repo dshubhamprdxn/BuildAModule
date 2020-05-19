@@ -1,0 +1,33 @@
+<div class="page">
+<a name="Top" id="Top"></a>
+<header id="header" class="header" role="header">
+  <div class="container wrapper">
+    {{ page.header }}
+  </div>
+</header>
+
+  {% if page.main_menu %}
+    <nav id="main-menu" class="navbar navbar-default" role="navigation">	
+      <div class="container wrapper">
+        {{ page.main_menu }}						
+      </div>
+    </nav>
+  {% endif %}
+
+  <section id="main" class="main" role="main">
+    <div class="container wrapper">
+        <div class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
+          {{ page.content }}
+        </div>
+    </div>
+  </section>
+
+  {% if page.footer %}
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+</div>

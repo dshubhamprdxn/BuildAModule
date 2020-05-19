@@ -1,0 +1,77 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+// h1, h2, h3,
+// h4, h5, h6 {}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"] {
+}
+
+input[type="submit"] {
+
+}
+
+textarea {
+
+}
+
+// select {}
+
+button[type="submit"] {
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// most icons will require inline-block
+
+[class*="icon-"] {
+  display: inline-block;
+}
+
+button,
+.btn {
+  transition: background-color 0.2s;
+}
+
+// rasterized share icons
+
+.icon-share-raster {
+  background: url(../images/icons/png/share-red-raster.png) no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 18px;
+}

@@ -1,0 +1,190 @@
+#panel_first {
+    .container {
+        background-color: #eee;
+    }
+}
+
+.related-content-list {
+    display: flex;
+    justify-content: start;
+    margin: 20px auto;
+
+    & > div {
+        margin-left: 2.5%;
+        padding: 10px 2%;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #CCC;
+        flex-basis: 30%;
+        width: 30%;
+
+        .industry-articles--figure,
+        .industry-infographic--figure,
+        .industry-case-study--figure {
+            transform: scale(1);
+            transition: all 1.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: all 1.5s ease-in-out;
+            }
+        }
+
+        .industry-articles--category,
+        .industry-infographic--category,
+        .industry-case-study--category  {
+            padding: 10px 0 0 0;
+            a {
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        .industry-articles--body,
+        .industry-case-study--body  {
+            padding: 10px 0 0 0;
+            p {
+                font-size: 14px;
+            }
+        }
+
+        h4 {
+            padding: 10px 0 0 0;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .industry-articles--read-more,
+        .industry-infographic--read-more,
+        .industry-case-study--read-more  {
+            padding: 15px 0 0 0;
+            a {
+                color: #000;
+                font-weight: bold;
+                font-size: 22px;
+                transform: scale(1);
+                transition: all 0.5s ease-in-out;
+
+                &:after {
+                    content: "";
+                    width: 25px;
+                    height: 20px;
+                    margin: 0 0 0 10px;
+                    display: inline-block;
+                    background: url(../images/svg/right-arrow.svg) no-repeat;
+                    background-size: contain;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+
+        .industry-videos--category  {
+            padding: 10px 0 0 0;
+            a {
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        .industry-videos--body  {
+            padding: 10px 0 0 0;
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .industry-videos--read-more  {
+            padding: 15px 0 0 0;
+            a {
+                color: #000;
+                font-weight: bold;
+                font-size: 22px;
+                transform: scale(1);
+                transition: all 0.5s ease-in-out;
+
+                &:after {
+                    content: "";
+                    width: 25px;
+                    height: 20px;
+                    margin: 0 0 0 10px;
+                    display: inline-block;
+                    background: url(../images/svg/right-arrow.svg) no-repeat;
+                    background-size: contain;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.more-content-list {
+    margin: 20px auto;
+
+    .industry-articles--category,
+    .industry-case-study--category  {
+        padding: 5px 0 0 0;
+        a {
+            display: block;
+            font-size: 14px;
+        }
+    }
+
+    .industry-articles--body,
+    .industry-case-study--body  {
+        padding: 10px 0 0 0;
+        p {
+            font-size: 14px;
+        }
+    }
+
+    h4 {
+        padding: 10px 0 0 0;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .industry-articles--read-more,
+    .industry-infographics--read-more,
+    .industry-case-study--read-more  {
+        padding: 15px 0 0 0;
+        a {
+            color: #000;
+            font-weight: bold;
+            font-size: 22px;
+            transform: scale(1);
+            transition: all 0.5s ease-in-out;
+
+            &:after {
+                content: "";
+                width: 25px;
+                height: 20px;
+                margin: 0 0 0 10px;
+                display: inline-block;
+                background: url(../images/svg/right-arrow.svg) no-repeat;
+                background-size: contain;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+
+    .industry-infographic--sponser {
+        padding: 10px 0 0 0;
+    }
+}

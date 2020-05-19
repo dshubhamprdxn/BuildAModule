@@ -1,0 +1,15 @@
+// Drupal comes with CSS quirks (Drupalisms). Unravel or override them here.
+a {
+  img {
+    border: 0;
+  }
+}
+
+#user-login {
+  margin-bottom: 20px;
+  width: 50%;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
